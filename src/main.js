@@ -1,10 +1,11 @@
+import { PokemonHandler } from './pokemon';
 import './style.css'
 
 export function Homepage() {
   document.querySelector('#app').innerHTML = `
   <div>
     <nav>
-      <a href="/PokemonList" ${data-navigo}>Pokemon</a>
+      <a href="/PokemonList" data-navigo>Pokemon</a>
       <img src="">
     </nav>
 
@@ -26,6 +27,9 @@ export function Homepage() {
     
   </div>
 `
-
+const btnSearch = document.getElementById("btnSearch") ;
+btnSearch.addEventListener("click", () => {
+  PokemonHandler()
+}) 
 };
 
