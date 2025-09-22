@@ -1,5 +1,5 @@
 import { GetPokemonName } from "./services/pokemon.api.js";
-
+import { router } from "./router.js"
 
 const getPokemonName = () => {
     const inptPokemon = document.getElementById("inptPokemon")
@@ -12,6 +12,7 @@ const getPokemonName = () => {
     return value;
 } 
 
+//* state
 
 //* main
 
@@ -25,6 +26,7 @@ export async function PokemonHandler() {
 
         if(data) {
             console.log(data.name);
+            router.navigate("/PokemonResult")
         }
 
     } catch (error) {
