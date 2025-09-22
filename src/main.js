@@ -21,6 +21,6 @@ export function Homepage() {
     </p>
   </div>
 `
+setupCounter(document.querySelector('#counter'))
 }
 
-setupCounter(document.querySelector('#counter'))
