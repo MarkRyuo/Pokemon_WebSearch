@@ -3,7 +3,7 @@
 
 export async function ApiClient(url, endpoint, option={}) {
     try {
-        const response = await fetch(url, endpoint, {
+        const response = await fetch(`${url}${endpoint}`, {
             headers: {
                 "Content-Type": "application/json",
                 ...option.headers
@@ -16,7 +16,7 @@ export async function ApiClient(url, endpoint, option={}) {
         if(!response.ok){
             throw new Error("Request failed with status", response.status)
         }
-        return response.json();
+        return await response.json();
 
     } catch (error) {
         console.error(error.message)

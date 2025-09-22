@@ -15,13 +15,19 @@ const getPokemonName = () => {
 
 //* main
 
-export function PokemonHandler() {
+export async function PokemonHandler() {
     
     try {
-        const data = GetPokemonName(getPokemonName())
-        
+        const pokemonName = getPokemonName();
+        if(!pokemonName) return ;
+
+        const data = await GetPokemonName(pokemonName)
+
+        if(data) {
+            console.log(data.name);
+        }
 
     } catch (error) {
-        
+        console.error(error.message)
     }
 };
