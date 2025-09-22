@@ -1,4 +1,4 @@
-// ApiClient reusable 
+//* ApiClient reusable 
 
 
 export async function ApiClient(url, endpoint, option={}) {
@@ -14,7 +14,7 @@ export async function ApiClient(url, endpoint, option={}) {
 
         //
         if(!response.ok){
-            throw new Error(response.status)
+            throw new Error("Request failed with status", response.status)
         }
         return response.json();
 
@@ -22,4 +22,4 @@ export async function ApiClient(url, endpoint, option={}) {
         console.error(error.message)
     }
 
-}
+};

@@ -1,26 +1,31 @@
 import './style.css'
-import javascriptLogo from './javascript.svg'
-import viteLogo from '/vite.svg'
-import { setupCounter } from './counter.js'
 
 export function Homepage() {
   document.querySelector('#app').innerHTML = `
   <div>
-    <a href="https://vite.dev" target="_blank">
-      <img src="${viteLogo}" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
-      <img src="${javascriptLogo}" class="logo vanilla" alt="JavaScript logo" />
-    </a>
-    <h1>Hello Vite!</h1>
-    <div class="card">
-      <button id="counter" type="button"></button>
-    </div>
-    <p class="read-the-docs">
-      Click on the Vite logo to learn more
-    </p>
+    <nav>
+      <a href="/PokemonList" ${data-navigo}>Pokemon</a>
+      <img src="">
+    </nav>
+
+    <main>
+      <div>
+        <img src="">
+      </div>
+      <div>
+        <input type="text" name="pokemonname" placeholder="Enter Pokemon Name" spellcheck required id="inptPokemon">
+        <button type="button" id="btnSearch">
+          Search
+        </button>
+        <div>
+          <img src="">
+        </div>
+      </div>
+    
+    </main>
+    
   </div>
 `
-setupCounter(document.querySelector('#counter'))
-}
+
+};
 
