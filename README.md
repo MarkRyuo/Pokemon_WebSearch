@@ -7,3 +7,8 @@
  ```
     npm install
  ```
+- Router: Navigo 
+ ```
+    npm install navigo --save
+ ```
+- 
