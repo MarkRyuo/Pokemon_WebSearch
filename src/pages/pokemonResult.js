@@ -1,7 +1,10 @@
+import { saveState } from "../pokemon.js"
 
 
 
 export function PokemonResult() {
+    const stateData = saveState() ;
+
     document.querySelector("#app").innerHTML = `
         <div>
             <div>
@@ -10,7 +13,7 @@ export function PokemonResult() {
             </div>
 
             <div>
-                <h1>Nameofpokemon</h1>
+                <h1>${stateData.name}</h1>
                 <img src="">
             </div>
         

@@ -12,10 +12,18 @@ const getPokemonName = () => {
     return value;
 } 
 
-//* state
+//* state : State Management 
+let state = null ; //* set to global 
+
+export const saveState = (data) => {
+    if(data) {
+        state = data ;
+    }
+    return state ;
+}; //* This state is temporary only, one's we roload it not showing again; 
+
 
 //* main
-
 export async function PokemonHandler() {
     
     try {
@@ -25,7 +33,7 @@ export async function PokemonHandler() {
         const data = await GetPokemonName(pokemonName)
 
         if(data) {
-            console.log(data.name);
+            saveState(data)
             router.navigate("/PokemonResult")
         }
 
