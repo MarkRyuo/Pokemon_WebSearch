@@ -1,23 +1,30 @@
-import { saveState } from "../pokemon.js"
+import { savedState } from "../utils/storeState"
+import { router } from "../router"
 
 
 
 export function PokemonResult() {
-    const stateData = saveState() ;
+    const state = savedState.get()
 
-    document.querySelector("#app").innerHTML = `
-        <div>
+    if(!state) {
+        router.navigate("/")
+    } else {
+        document.querySelector("#app").innerHTML = `
             <div>
-                <img src="">
-                <img src="">
-            </div>
-
-            <div>
-                <h1>${stateData.name}</h1>
-                <img src="">
+                <div>
+                    <img src="../assets/gif/xpRS9.gif">
+                    <img src="${state.sprites?.front_default}" id="pokemonImg">
+                </div>
+    
+                <div>
+                    <h1>${state.name}</h1>
+                    <img src="">
+                </div>
+            
             </div>
         
-        </div>
-    
-    `
+        `
+    }
+
+
 }
