@@ -12,6 +12,8 @@
     "vite": "^7.1.7"
   },
   "dependencies": {
-    "navigo": "^8.11.1"
+    "@tailwindcss/vite": "^4.1.13",
+    "navigo": "^8.11.1",
+    "tailwindcss": "^4.1.13"
   }
 }

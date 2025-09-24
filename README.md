@@ -11,4 +11,7 @@
  ```
     npm install navigo --save
  ```
-- 
+- Tailwind 
+ ```
+   npm install tailwindcss @tailwindcss/vite
+ ```
