@@ -1,5 +1,6 @@
 import { savedState } from "../utils/storeState"
 import { router } from "../router"
+import pokemonGif from "../assets/gif/xpRS9.gif"
 
 
 
@@ -12,7 +13,7 @@ export function PokemonResult() {
         document.querySelector("#app").innerHTML = `
             <div>
                 <div>
-                    <img src="../assets/gif/xpRS9.gif">
+                    <img src="${pokemonGif}">
                     <img src="${state.sprites?.front_default}" id="pokemonImg">
                 </div>
     
