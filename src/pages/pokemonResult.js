@@ -19,7 +19,7 @@ export function PokemonResult() {
                 </div>
     
                 <div>
-                    <h1>${state.name}</h1>
+                    <h1 class="text-2xl">${state.name}</h1>
                     <img src="">
                 </div>
             
