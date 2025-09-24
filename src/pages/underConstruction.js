@@ -10,7 +10,7 @@ export function UnderConstruction() {
             </div>
             <div>
                 <p>
-                    Hey we are Probli Team, We are currently working on our site. Stay tuned, You can search Pokemon already. Go check out <a href="/" data-navigo>Pokemon Search</a>
+                    Hey we are ByTechive Team, We are currently working on our site. Stay tuned, You can search Pokemon already. Go check out <a href="/" data-navigo>Pokemon Search</a>
                 </p>
             </div>
         
