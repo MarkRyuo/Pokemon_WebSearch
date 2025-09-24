@@ -3,7 +3,7 @@ import './style.css'
 
 export function Homepage() {
   document.querySelector('#app').innerHTML = `
-  <div class="bg-red-600">
+  <div class="bg-blue-400">
     <nav>
       <a href="/PokemonList" data-navigo>Pokemon</a>
       <img src="">
@@ -14,7 +14,7 @@ export function Homepage() {
         <img src="">
       </div>
       <div>
-        <input type="text" name="pokemonname" placeholder="Enter Pokemon Name" spellcheck required id="inptPokemon">
+        <input type="text" name="PokemonNameInput" placeholder="Enter Pokemon Name" spellcheck required id="inptPokemon">
         <button type="button" id="btnSearch">
           Search
         </button>

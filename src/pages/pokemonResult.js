@@ -12,10 +12,10 @@ export function PokemonResult() {
         router.navigate("/")
     } else {
         document.querySelector("#app").innerHTML = `
-            <div class="bg-red-600">
+            <div class="bg-red-500">
                 <div>
                     <img src="${pokemonGif}">
-                    <img src="${state.sprites?.front_default}" id="pokemonImg">
+                    <img src="${state.sprites?.front_default}" id="pokemonImg" class="w-md">
                 </div>
     
                 <div>
