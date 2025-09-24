@@ -17,14 +17,3 @@ class SavedState {
 }
 
 export const savedState = new SavedState() ;
-
-
-const sampleState = () => {
-    
-    let save = null 
-
-    return {
-        set(data) { save = data },
-        get() { return save}
-    }
-}
