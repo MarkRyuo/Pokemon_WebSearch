@@ -3,7 +3,7 @@ import './style.css'
 
 export function Homepage() {
   document.querySelector('#app').innerHTML = `
-  <div>
+  <div class="bg-red-600">
     <nav>
       <a href="/PokemonList" data-navigo>Pokemon</a>
       <img src="">

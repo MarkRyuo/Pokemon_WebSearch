@@ -1,6 +1,7 @@
 import { savedState } from "../utils/storeState"
 import { router } from "../router"
 import pokemonGif from "../assets/gif/xpRS9.gif"
+import "../style.css"
 
 
 
@@ -11,7 +12,7 @@ export function PokemonResult() {
         router.navigate("/")
     } else {
         document.querySelector("#app").innerHTML = `
-            <div>
+            <div class="bg-red-600">
                 <div>
                     <img src="${pokemonGif}">
                     <img src="${state.sprites?.front_default}" id="pokemonImg">
