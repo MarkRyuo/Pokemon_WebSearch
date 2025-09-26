@@ -14,7 +14,7 @@ export function Homepage() {
         <img src="">
       </div>
       <div>
-        <input type="text" name="PokemonNameInput" placeholder="Enter Pokemon Name" spellcheck required id="inptPokemon">
+        <input type="text" name="PokemonNameInput" placeholder="Enter Pokemon Name" spellcheck required id="inptPokemon" class="max-w-xs">
         <button type="button" id="btnSearch">
           Search
         </button>
