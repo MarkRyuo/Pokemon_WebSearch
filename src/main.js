@@ -1,4 +1,5 @@
 import { PokemonHandler } from './pokemon';
+import pokemontext from "./assets/png/PokemonTextWhite.png"
 import './style.css'
 
 export function Homepage() {
@@ -14,7 +15,7 @@ export function Homepage() {
 
       <main class="">
         <div>
-          <img src="">
+          <img src="${pokemontext}" class="">
         </div>
         <div class="grid justify-center content-center gap-y-3">
           <input type="text" name="PokemonNameInput" placeholder="Enter Pokemon Name" spellcheck required id="inptPokemon" class="w-sm p-2 bg-white rounded-sm">
