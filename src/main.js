@@ -6,7 +6,7 @@ import './style.css'
 
 export function Homepage() {
   document.querySelector('#app').innerHTML = `
-  <div class=" bg-[#198AD8] relative h-screen overflow-hidden">
+  <div class=" bg-[#198AD8] h-screen overflow-hidden">
     <div class="h-screen grid max-w-7xl mx-auto border grid-rows-[1fr_2fr_1fr] gap-3.5">
       <div>
         <nav class="border-red-800 flex justify-end bg-white/80 p-3 rounded-full items-center gap-9 max-h-15">
@@ -17,7 +17,7 @@ export function Homepage() {
         </nav>
       </div>
 
-      <main class="">
+      <main class="border relative overflow-hidden">
         <div class="flex items-center justify-center">
           <img src="${pokemontext}" class="max-w-lg">
         </div>
@@ -26,12 +26,12 @@ export function Homepage() {
           <button type="button" id="btnSearch" class="bg-yellow-300 text-black p-2 w-30 justify-self-center rounded-2xl">
             Search
           </button>
-          </div>
+        </div>
           
-          </main>
-          <div class="absolute -right-15 bottom-0 w-auto">
-            <img src="${pikachu}" class="w-[600px] h-auto">
-          </div>
+      </main>
+      <div class="absolute right-0 bottom-0 w-[609px] h-auto overflow-hidden">
+        <img src="${pikachu}" class="w-auto h-auto">
+      </div>
       
     </div>
   </div>
