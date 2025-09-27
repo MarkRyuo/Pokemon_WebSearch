@@ -1,7 +1,7 @@
 import { PokemonHandler } from './pokemon';
 import pokemontext from "./assets/png/PokemonTextV3.png";
 import pokeball from "./assets/png/pokeball.png";
-import pikachu from "./assets/png/pikachunn-removebg.png";
+import pikachu from "./assets/png/pikachunn-removebg-enhance.png";
 import './style.css'
 
 export function Homepage() {
