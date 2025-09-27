@@ -1,5 +1,5 @@
 import { PokemonHandler } from './pokemon';
-import pokemontext from "./assets/png/PokemonTextWhite.png";
+import pokemontext from "./assets/png/PokemonlogoV2.png";
 import pokeball from "./assets/png/pokeball.png";
 import pikachu from "./assets/png/pikachunn-removebg.png";
 import './style.css'
