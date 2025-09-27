@@ -1,16 +1,19 @@
 import { PokemonHandler } from './pokemon';
-import pokemontext from "./assets/png/PokemonTextWhite.png"
-import pokeball from "./assets/png/pokeball.png"
+import pokemontext from "./assets/png/PokemonTextWhite.png";
+import pokeball from "./assets/png/pokeball.png";
+import pikachu from "./assets/jpg/pikachunn.jpg";
 import './style.css'
 
 export function Homepage() {
   document.querySelector('#app').innerHTML = `
   <div class=" bg-blue-400">
-    <div class="h-screen grid max-w-7xl mx-auto border grid-rows-[1fr_2fr_1fr]">
+    <div class="h-screen grid max-w-7xl mx-auto border grid-rows-[1fr_2fr_1fr] gap-3.5">
       <div>
         <nav class="border-red-800 flex justify-end bg-white p-3 rounded-full items-center gap-9 max-h-20">
           <a href="/PokemonList" data-navigo>Pokemon</a>
-          <img src="${pokeball}" class="max-w-10">
+          <a href="https://www.flaticon.com/free-icon/pokeball_287221" alt="flaticon">
+            <img src="${pokeball}" class="max-w-10">
+          </a>
         </nav>
       </div>
 
