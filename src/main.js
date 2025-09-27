@@ -6,7 +6,7 @@ import './style.css'
 
 export function Homepage() {
   document.querySelector('#app').innerHTML = `
-  <div class=" bg-blue-400 relative">
+  <div class=" bg-[#198AD8] relative">
     <div class="h-screen grid max-w-7xl mx-auto border grid-rows-[1fr_2fr_1fr] gap-3.5">
       <div>
         <nav class="border-red-800 flex justify-end bg-white/80 p-3 rounded-full items-center gap-9 max-h-15">
@@ -22,7 +22,7 @@ export function Homepage() {
           <img src="${pokemontext}" class="max-w-lg justify-self-center">
         </div>
         <div class="grid justify-center content-center gap-y-3">
-          <input type="text" name="PokemonNameInput" placeholder="Enter Pokemon Name" spellcheck required id="inptPokemon" class="w-sm p-2 bg-white rounded-xl">
+          <input type="text" name="PokemonNameInput" placeholder="Enter Pokemon Name" spellcheck required id="inptPokemon" class="w-sm p-2 bg-white rounded-xl inset-shadow-amber-50">
           <button type="button" id="btnSearch" class="bg-yellow-300 text-black p-2 w-30 justify-self-center rounded-2xl">
             Search
           </button>
