@@ -14,7 +14,7 @@ export function Homepage() {
 
       <main class="">
         <div>
-          <img src="https://i.pinimg.com/736x/c2/64/a1/c264a1798fd1cdc3899716c72051960c.jpg">
+          <img src="">
         </div>
         <div class="grid justify-center content-center gap-y-3">
           <input type="text" name="PokemonNameInput" placeholder="Enter Pokemon Name" spellcheck required id="inptPokemon" class="w-sm p-2 bg-white rounded-sm">
