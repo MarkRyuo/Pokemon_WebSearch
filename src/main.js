@@ -29,8 +29,8 @@ export function Homepage() {
         </div>
           
       </main>
-      <div class="absolute right-0 bottom-0 w-[609px] h-auto overflow-hidden">
-        <img src="${pikachu}" class="w-auto h-auto">
+      <div class="absolute right-0 bottom-0 w-[700px] h-auto overflow-hidden">
+        <img src="${pikachu}" class="w-auto h-auto object-contain">
       </div>
       
     </div>
