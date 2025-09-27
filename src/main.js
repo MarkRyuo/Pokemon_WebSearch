@@ -1,12 +1,12 @@
 import { PokemonHandler } from './pokemon';
 import pokemontext from "./assets/png/PokemonTextWhite.png";
 import pokeball from "./assets/png/pokeball.png";
-import pikachu from "./assets/jpg/pikachunn.jpg";
+import pikachu from "./assets/png/pikachunn-removebg.png";
 import './style.css'
 
 export function Homepage() {
   document.querySelector('#app').innerHTML = `
-  <div class=" bg-blue-400">
+  <div class=" bg-blue-400 relative">
     <div class="h-screen grid max-w-7xl mx-auto border grid-rows-[1fr_2fr_1fr] gap-3.5">
       <div>
         <nav class="border-red-800 flex justify-end bg-white p-3 rounded-full items-center gap-9 max-h-20">
@@ -26,12 +26,12 @@ export function Homepage() {
           <button type="button" id="btnSearch" class="bg-yellow-300 text-black p-2 w-30 justify-self-center rounded-sm">
             Search
           </button>
-          <div>
-            <img src="">
           </div>
-        </div>
-      
-      </main>
+          
+          </main>
+          <div class="absolute -right-10 bottom-0">
+            <img src="${pikachu}" class="w-xl">
+          </div>
       
     </div>
   </div>
