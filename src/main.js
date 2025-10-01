@@ -14,7 +14,7 @@ export function Homepage() {
           <a href="https://www.flaticon.com/free-icon/pokeball_287221" alt="flaticon" target="_blank" title="Pokeball by Flaticon">
             <img src="${pokeball}" class="max-w-10">
           </a>
-        </nav>
+        </nav>j
       </div>
 
       <main class="border relative overflow-hidden">
