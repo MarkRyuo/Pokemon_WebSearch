@@ -7,8 +7,8 @@ import './style.css'
 export function Homepage() {
   document.querySelector('#app').innerHTML = `
   <div class="bg-blue-500 w-screen h-screen overflow-hidden box-border">
-    <div class="grid grid-rows-[1fr, 1fr,] h-screen w-full max-w-7xl m-auto">
-      <div class="w-screen h-20">
+    <div class="grid grid-rows-[1fr, 1fr] h-screen sm:max-w-7xl sm:m-auto">
+      <div class="w-screen sm:w-full h-20">
         <nav class="bg-white rounded-full flex flex-row justify-end items-center gap-1 p-2 w-full">
           <a href="/PokemonList" data-navigo>Pokemon</a>
           <a href="https://www.flaticon.com/free-icon/pokeball_287221" alt="flaticon" target="_blank" title="Pokeball by Flaticon">
@@ -17,7 +17,7 @@ export function Homepage() {
         </nav>
       </div>
 
-      <main class="w-screen relative flex flex-col items-center">
+      <main class="relative flex flex-col items-center">
         <div class="">
           <img src="${pokemontext}" class="w-full max-w-md min-w-2xs">
         </div>
@@ -29,8 +29,8 @@ export function Homepage() {
         </div>
           
       </main>
-      <div class="absolute">
-        <img src="${pikachu}" class="hidden">
+      <div class="absolute right-40 bottom-40">
+        <img src="${pikachu}" class="hidden w-full max-w-lg md:block">
       </div>
       
     </div>
