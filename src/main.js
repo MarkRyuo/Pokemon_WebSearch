@@ -29,7 +29,7 @@ export function Homepage() {
         </div>
           
       </main>
-      <div class="absolute right-40 bottom-40">
+      <div class="absolute right-10 bottom-0">
         <img src="${pikachu}" class="hidden w-full max-w-lg xl:block">
       </div>
       
