@@ -7,7 +7,7 @@ import './style.css'
 export function Homepage() {
   document.querySelector('#app').innerHTML = `
   <div class="bg-blue-500 w-screen h-screen overflow-hidden box-border">
-    <div class="grid grid-rows-[1fr, 1fr,] h-screen md:m-auto">
+    <div class="grid grid-rows-[1fr, 1fr,] h-screen">
       <div class="w-screen h-20">
         <nav class="bg-white rounded-full flex flex-row justify-end items-center gap-1 p-2 w-full">
           <a href="/PokemonList" data-navigo>Pokemon</a>
