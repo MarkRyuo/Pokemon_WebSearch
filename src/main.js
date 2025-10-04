@@ -10,7 +10,7 @@ export function Homepage() {
     <div class="grid grid-rows-[80px, 1fr] h-screen sm:max-w-7xl sm:m-auto">
       <div class="w-screen sm:w-full">
         <nav class="bg-white/75 rounded-full flex flex-row justify-end items-center gap-3 p-2 w-full">
-          <a href="/PokemonList" data-navigo>Pokédex</a>
+          <a href="/PokemonList" data-navigo class="font-poppins font-light">Pokédex</a>
           <a href="https://www.flaticon.com/free-icon/pokeball_287221" alt="flaticon" target="_blank" title="Pokeball by Flaticon">
             <img src="${pokeball}" class="w-full max-w-8 min-w-4 ">
           </a>
@@ -23,7 +23,7 @@ export function Homepage() {
         </div>
         <div class="flex flex-col gap-2 items-center">
           <input type="text" name="PokemonNameInput" placeholder="Enter Pokemon Name" spellcheck required id="inptPokemon" class="w-screen sm:w-sm p-2.5 bg-white rounded-xl inset-shadow-amber-50">
-          <button type="button" id="btnSearch" class="bg-yellow-300 w-full max-w-28 p-1.5 rounded-xl font-bold text-base">
+          <button type="button" id="btnSearch" class="bg-yellow-300 w-full max-w-28 p-1.5 rounded-xl font-bold text-base font-poppins">
             Search
           </button>
         </div>
